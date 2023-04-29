@@ -35,7 +35,7 @@
         <div class="bg-yellow-100 p-4 rounded text-center">
             <Heading tag="h2" class="mb-4">LearnAi.js</Heading>
             <img src="https://cdn.discordapp.com/attachments/919393991936606271/1101712753883881492/image_9.png" class="object-cover max-w-full max-h-full rounded-lg" alt="">
-            <P>LearnAI.js is a javascript library I helped make for my grade 11 computer science
+            <P class="my-4">LearnAI.js is a javascript library I helped make for my grade 11 computer science
                 final project. The AI was developed by us to help other students learn about AI, 
                 and help teachers teach students about AI in a more fun and creative way. The base 
                 AI was trained to detect hand-drawn numbers.<br><br>
@@ -46,7 +46,7 @@
         <div class="bg-indigo-100 p-4 rounded text-center">
             <Heading tag="h2" class="mb-4">Inbot</Heading>
             <img src="https://cdn.discordapp.com/attachments/919393991936606271/1101712525613088849/image_8.png" class="object-cover max-w-full max-h-full rounded-lg" alt="">
-            <P>Inbot is a discord bot that I helped make for a Lyonhacks III, a hackathon event. 
+            <P class="my-4">Inbot is a discord bot that I helped make for a Lyonhacks III, a hackathon event. 
                 The purpose of Inbot is to help students stay on track and get regular notifications 
                 of their emails all in discord. Personally, I can find it hard to check my emails regularly, 
                 so having a bot send you your emails to a place you frequently visit helps with productivity.<br><br>

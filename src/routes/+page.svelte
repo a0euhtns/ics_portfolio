@@ -1,3 +1,14 @@
+<script>
+    import { Canvas, Layer, t } from "svelte-canvas";
+
+    $: render = ({ context, width, height }) => {
+        context.fillStyle = `hsl(${$t / 40}, 100%, 50%)`;
+        context.beginPath();
+        context.arc(($t / 4) % width, ($t / 4) % height, 100, 0, Math.PI * 2);
+        context.fill();
+    };
+</script>
+
 <div class="py-16 pt-20 m-10 mx-36">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="sm:text-center lg:text-left">
@@ -10,8 +21,9 @@
             <p
                 class="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0"
             >
-            Welcome to my portfolio! My name is Felix Zhao, and I am a full stack developer. I have a passion for programming, 
-            and I love using my skills to create exciting new projects.
+                Welcome to my portfolio! My name is Felix Zhao, and I am a full
+                stack developer. I have a passion for programming, and I love
+                using my skills to create exciting new projects.
             </p>
             <div
                 class="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start"
@@ -36,3 +48,6 @@
         </div>
     </div>
 </div>
+<Canvas width={640} height={640}>
+    <Layer {render} />
+</Canvas>

@@ -26,7 +26,9 @@
     "@popperjs/core": "^2.11.7",
     "classnames": "^2.3.2",
     "flowbite": "^1.6.5",
-    "flowbite-svelte": "^0.34.9"
+    "flowbite-svelte": "^0.34.9",
+    "fluid-canvas": "^0.9.3",
+    "svelte-canvas": "^0.9.3"
   },
   "homepage": "https://a0euhtns.github.io/aoeuhtns.github.io"
 }
