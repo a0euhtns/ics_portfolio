@@ -18,7 +18,7 @@
 </script>
 
 <div class="pt-20 m-10 mx-36">
-    <Heading tag="h2" class="mb-4"></Heading>
+    <Heading tag="h2" class="mb-4">Arrays</Heading>
     <Heading tag="h4" weight="light" class="mb-4">Creation</Heading>
     <P weight="light" color="text-gray-500 dark:text-gray-400" class="mb-4 leading-loose">
         Arrays are created using the <Kbd class="px-1.5 py-1 font-mono font-semibold">new</Kbd> 

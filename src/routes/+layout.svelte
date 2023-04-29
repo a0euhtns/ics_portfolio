@@ -19,7 +19,7 @@
           />
           <span
               class="self-center whitespace-nowrap text-xl font-semibold dark:text-white"
-              >Felix Zhao</span
+              >&lbrace;Felix Zhao&rbrace;</span
           >
       </Flowbite.NavBrand>
       <Flowbite.NavHamburger on:click={toggle} />
