@@ -1,109 +1,211 @@
 <!DOCTYPE html>
 <html lang="en">
+	<style>
+		::-webkit-scrollbar {
+			width: 20px;
+		}
+		::-webkit-scrollbar-track {
+			background-color: transparent;
+		}
+		::-webkit-scrollbar-thumb {
+			background-color: #d6dee1;
+			border-radius: 20px;
+			border: 6px solid transparent;
+			background-clip: content-box;
+		}
+		::-webkit-scrollbar-thumb:hover {
+			background-color: #a8bbbf;
+		}
+	</style>
 	<head>
 		<meta charset="utf-8" />
 		<link rel="icon" href="./favicon.png" />
 		<meta name="viewport" content="width=device-width" />
 		<meta http-equiv="content-security-policy" content="">
-		<link href="./_app/immutable/assets/app.b767e8fd.css" rel="stylesheet">
-		<link href="./_app/immutable/assets/Chevron.1d121e74.css" rel="stylesheet">
-		<link rel="modulepreload" href="./_app/immutable/entry/start.7469adbb.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/index.4db87ebb.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/singletons.9ad32d57.js">
-		<link rel="modulepreload" href="./_app/immutable/entry/app.d87f6052.js">
-		<link rel="modulepreload" href="./_app/immutable/entry/_layout.svelte.dad98592.js">
+		<link href="./_app/immutable/assets/_layout.b8b9d57a.css" rel="stylesheet">
+		<link href="./_app/immutable/assets/Indicator.1d121e74.css" rel="stylesheet">
+		<link rel="modulepreload" href="./_app/immutable/entry/start.44860b51.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/index.6963947b.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/singletons.c0d12894.js">
+		<link rel="modulepreload" href="./_app/immutable/entry/app.813d3035.js">
+		<link rel="modulepreload" href="./_app/immutable/entry/_layout.svelte.dac6ed13.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/Indicator.svelte_svelte_type_style_lang.7adfd83d.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/NavLi.2be67e77.js">
 		<link rel="modulepreload" href="./_app/immutable/entry/_layout.js.984db11e.js">
 		<link rel="modulepreload" href="./_app/immutable/chunks/_layout.da46b06b.js">
-		<link rel="modulepreload" href="./_app/immutable/entry/arrays-layout.svelte.dad98592.js">
-		<link rel="modulepreload" href="./_app/immutable/entry/arrays-page.svelte.46f942f9.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/Chevron.0ec6f9ef.js">
+		<link rel="modulepreload" href="./_app/immutable/entry/arrays-page.svelte.ec9489d2.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/Kbd.073baf50.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/P.b3c387a8.js">
 	</head>
-	<body data-sveltekit-preload-data="hover">
+	<body data-sveltekit-preload-data="hover" class="bg-white dark:bg-gray-800">
 		<div style="display: contents">
 
 
+<div class="pt-20 m-10 mx-36"><h2 class="text-4xl font-bold text-gray-900 dark:text-white w-full mb-4">Arrays</h2>
+    <h4 weight="light" class="text-2xl font-bold text-gray-900 dark:text-white w-full mb-4">Creation</h4>
+    <p class="text-base text-gray-500 dark:text-gray-400 leading-normal font-light text-left whitespace-normal mb-4 leading-loose">Arrays are created using the <kbd class="text-xs font-semibold text-gray-800 bg-gray-100 border border-gray-200 rounded-lg dark:bg-gray-600 dark:text-gray-100 dark:border-gray-500 px-1.5 py-1 font-mono font-semibold">new</kbd> 
+        keyword, which allocates memory for the array and 
+        initializes its elements to default values. The size of the array is established at 
+        creation and cannot be changed. Arrays can store references to objects or primitive 
+        values such as integers or doubles.<br>
+        Here is an example of creating an array of integers with size 5:
+    </p>
+    <p class="text-base text-gray-900 dark:text-white leading-normal font-normal text-left whitespace-normal text-m p-2 font-mono font-semibold text-gray-800 bg-gray-100 border border-gray-200 rounded-lg dark:bg-gray-600 dark:text-gray-100 dark:border-gray-500 mb-4">int[] arr = new int[5];
+    </p>
+    <p class="text-base text-gray-500 dark:text-gray-400 leading-normal font-light text-left whitespace-normal mb-4 leading-loose">The default initializations for array elements are as follows:
+        <ul class="list-disc pl-8"><li><kbd class="text-xs font-semibold text-gray-800 bg-gray-100 border border-gray-200 rounded-lg dark:bg-gray-600 dark:text-gray-100 dark:border-gray-500 px-1.5 py-1 font-mono font-semibold">int</kbd> - 0</li>
+            <li><kbd class="text-xs font-semibold text-gray-800 bg-gray-100 border border-gray-200 rounded-lg dark:bg-gray-600 dark:text-gray-100 dark:border-gray-500 px-1.5 py-1 font-mono font-semibold">double</kbd> - 0.0</li>
+            <li><kbd class="text-xs font-semibold text-gray-800 bg-gray-100 border border-gray-200 rounded-lg dark:bg-gray-600 dark:text-gray-100 dark:border-gray-500 px-1.5 py-1 font-mono font-semibold">boolean</kbd> - false</li>
+            <li><kbd class="text-xs font-semibold text-gray-800 bg-gray-100 border border-gray-200 rounded-lg dark:bg-gray-600 dark:text-gray-100 dark:border-gray-500 px-1.5 py-1 font-mono font-semibold">Reference variables</kbd> - null</li></ul>
+        Initialization lists can also be used to create and initialize an array in a single statement:
+    </p>
+    <p class="text-base text-gray-900 dark:text-white leading-normal font-normal text-left whitespace-normal text-m p-2 font-mono font-semibold text-gray-800 bg-gray-100 border border-gray-200 rounded-lg dark:bg-gray-600 dark:text-gray-100 dark:border-gray-500 mb-4">int[] arr = {1, 2, 3, 4, 5};
+    </p>
+    <h4 weight="light" class="text-2xl font-bold text-gray-900 dark:text-white w-full mb-4">Access</h4>
+    <p class="text-base text-gray-500 dark:text-gray-400 leading-normal font-light text-left whitespace-normal mb-4 leading-loose">Array elements are accessed using square brackets <kbd class="text-xs font-semibold text-gray-800 bg-gray-100 border border-gray-200 rounded-lg dark:bg-gray-600 dark:text-gray-100 dark:border-gray-500 px-1.5 py-1 font-mono font-semibold">[]</kbd>, 
+        and their indices range from 0 to <kbd class="text-xs font-semibold text-gray-800 bg-gray-100 border border-gray-200 rounded-lg dark:bg-gray-600 dark:text-gray-100 dark:border-gray-500 px-1.5 py-1 font-mono font-semibold">length-1</kbd>. 
+        Trying to access an index outside of this range will result in an 
+        <kbd class="text-xs font-semibold text-gray-800 bg-gray-100 border border-gray-200 rounded-lg dark:bg-gray-600 dark:text-gray-100 dark:border-gray-500 px-1.5 py-1 font-mono font-semibold">ArrayIndexOutOfBoundsException</kbd>. 
+        The <kbd class="text-xs font-semibold text-gray-800 bg-gray-100 border border-gray-200 rounded-lg dark:bg-gray-600 dark:text-gray-100 dark:border-gray-500 px-1.5 py-1 font-mono font-semibold">length</kbd> of an array can be accessed 
+        using the <kbd class="text-xs font-semibold text-gray-800 bg-gray-100 border border-gray-200 rounded-lg dark:bg-gray-600 dark:text-gray-100 dark:border-gray-500 px-1.5 py-1 font-mono font-semibold">array.length</kbd> field.<br><br>
+        Here is an example of accessing an element in an array:
+    </p>
+    <p class="text-base text-gray-900 dark:text-white leading-normal font-normal text-left whitespace-normal text-m p-2 font-mono font-semibold text-gray-800 bg-gray-100 border border-gray-200 rounded-lg dark:bg-gray-600 dark:text-gray-100 dark:border-gray-500 mb-4">int value = arr[2]; // retrieves the value at index 2
+    </p>
+    <h4 weight="light" class="text-2xl font-bold text-gray-900 dark:text-white w-full mb-4">Traversal</h4>
+    <p class="text-base text-gray-500 dark:text-gray-400 leading-normal font-light text-left whitespace-normal mb-4 leading-loose">To access all elements in an array, we can use iteration. We must use indexed loops, 
+        where elements are accessed by their indices. Care must be taken to ensure that the 
+        loop doesn&#39;t run for too many or too few iterations (off by one error).<br><br>
+        Here is an example of using an indexed loop to traverse an array:
+    </p>
+    <p class="text-base text-gray-900 dark:text-white leading-normal font-normal text-left whitespace-normal text-m p-2 font-mono font-semibold text-gray-800 bg-gray-100 border border-gray-200 rounded-lg dark:bg-gray-600 dark:text-gray-100 dark:border-gray-500 mb-4">for (int i = 0; i &lt; arr.length; i++) {<br>
+        ⠀⠀int value = arr[i]; // do something with value<br>
+        }
+    </p>
+    <h4 weight="light" class="text-2xl font-bold text-gray-900 dark:text-white w-full mb-4">For-each Loop</h4>
+    <p class="text-base text-gray-500 dark:text-gray-400 leading-normal font-light text-left whitespace-normal mb-4 leading-loose">A for-each loop, also known as an enhanced for loop, can be used to iterate over all 
+        elements in an array without using indices. This is a convenient way to traverse 
+        arrays and can improve code readability.<br><br>
+        Here is an example of using a for-each loop to traverse an array:
+    </p>
+    <p class="text-base text-gray-900 dark:text-white leading-normal font-normal text-left whitespace-normal text-m p-2 font-mono font-semibold text-gray-800 bg-gray-100 border border-gray-200 rounded-lg dark:bg-gray-600 dark:text-gray-100 dark:border-gray-500 mb-4">for (int value : arr) {<br>
+        ⠀⠀// do something with value<br>
+        }
+    </p>
+    <h4 weight="light" class="text-2xl font-bold text-gray-900 dark:text-white w-full mb-4">Algorithms</h4>
+    <h5 weight="light" class="text-xl font-bold text-gray-900 dark:text-white w-full mb-4">Finding the minimum and maximum values in an array</h5>
+    <p class="text-base text-gray-500 dark:text-gray-400 leading-normal font-light text-left whitespace-normal mb-4 leading-loose">To find the minimum or maximum value in an array, follow these steps:
+        <ul class="list-decimal pl-8"><li>Set the minimum or maximum variable to the first element in the array 
+                (e.g., <kbd class="text-xs font-semibold text-gray-800 bg-gray-100 border border-gray-200 rounded-lg dark:bg-gray-600 dark:text-gray-100 dark:border-gray-500 px-1.5 py-1 font-mono font-semibold">int min = arr[0]</kbd> 
+                or <kbd class="text-xs font-semibold text-gray-800 bg-gray-100 border border-gray-200 rounded-lg dark:bg-gray-600 dark:text-gray-100 dark:border-gray-500 px-1.5 py-1 font-mono font-semibold">int max = arr[0]</kbd>).</li>
+            <li>Loop through the array from the second element (index 1) to the last element 
+                (index <kbd class="text-xs font-semibold text-gray-800 bg-gray-100 border border-gray-200 rounded-lg dark:bg-gray-600 dark:text-gray-100 dark:border-gray-500 px-1.5 py-1 font-mono font-semibold">arr.length - 1</kbd>).</li>
+            <li>For each element in the array, compare it to the current minimum or maximum value.</li>
+            <li>If the element is smaller than the current minimum value, update the minimum variable.</li>
+            <li>If the element is larger than the current maximum value, update the maximum variable.</li>
+            <li>After traversing the entire array, the minimum or maximum variable will hold the smallest 
+                or largest element in the array, respectively.</li>
+        </ul><br>
+        You can also keep track of the index of the minimum or maximum value by initializing an index variable 
+        to 0 and updating it whenever you update the corresponding minimum or maximum variable.
+    </p>
+    <p class="text-base text-gray-900 dark:text-white leading-normal font-normal text-left whitespace-normal text-m p-2 font-mono font-semibold text-gray-800 bg-gray-100 border border-gray-200 rounded-lg dark:bg-gray-600 dark:text-gray-100 dark:border-gray-500 mb-4">int[] arr = {5, 2, 7, 3, 1};<br><br>
+
+        int min = arr[0];<br>
+        int max = arr[0];<br><br>
+
+        for (int i = 1; i &lt; arr.length; i++) {<br>
+        ⠀⠀if (arr[i] &lt; min) {<br>
+        ⠀⠀⠀⠀min = arr[i];<br>
+        ⠀⠀}<br>
+        ⠀⠀if (arr[i] &gt; max) {<br>
+        ⠀⠀⠀⠀ max = arr[i];<br>
+        ⠀⠀}<br>
+        }<br><br>
+
+        System.out.println(&quot;Minimum value: &quot; + min);<br>
+        System.out.println(&quot;Maximum value: &quot; + max);
+    </p>
+    <h5 weight="light" class="text-xl font-bold text-gray-900 dark:text-white w-full mb-4">Calculating the average value of an array</h5>
+    <p class="text-base text-gray-500 dark:text-gray-400 leading-normal font-light text-left whitespace-normal mb-4 leading-loose">To calculate the average value of an array, follow these steps:
+        <ul class="list-decimal pl-8"><li>Initialize a variable to 0 to store the cumulative sum of all the elements in the array.</li>
+            <li>Loop through the array and add each element to the cumulative sum variable.</li>
+            <li>After traversing the entire array, divide the cumulative sum variable by the length of the 
+                array to get the average value.</li></ul></p>
+    <p class="text-base text-gray-900 dark:text-white leading-normal font-normal text-left whitespace-normal text-m p-2 font-mono font-semibold text-gray-800 bg-gray-100 border border-gray-200 rounded-lg dark:bg-gray-600 dark:text-gray-100 dark:border-gray-500 mb-4">int[] arr = {5, 2, 7, 3, 1};<br><br>
+
+        double sum = 0;<br><br>
+
+        for (int i = 0; i &lt; arr.length; i++) {<br>
+        ⠀⠀sum += arr[i];<br>
+        }<br><br>
+
+        double average = sum / arr.length;<br><br>
+
+        System.out.println(&quot;Average value: &quot; + average);
+    </p>
+    <h5 weight="light" class="text-xl font-bold text-gray-900 dark:text-white w-full mb-4">Shifting the elements in an array</h5>
+    <p class="text-base text-gray-500 dark:text-gray-400 leading-normal font-light text-left whitespace-normal mb-4 leading-loose">To shift the elements in an array by a specific amount, follow these steps
+        <ul class="list-decimal pl-8"><li>Make a new array with the same length as the original array to store the final shifted array.</li>
+            <li>Loop through the original array and for each element, add the specific shift amount to its index 
+                and take the result modulo the length of the array.</li>
+            <li>Store the value of the original element in the corresponding index in the new array.</li>
+            <li>Repeat steps 2-3 for all elements in the original array.</li>
+            <li>The new array will now contain the elements from the original array shifted by the specified amount. 
+                To prevent elements from going out of bounds, use the modulo operator to cycle back to the beginning 
+                of the array if necessary.</li></ul></p>
+    <p class="text-base text-gray-900 dark:text-white leading-normal font-normal text-left whitespace-normal text-m p-2 font-mono font-semibold text-gray-800 bg-gray-100 border border-gray-200 rounded-lg dark:bg-gray-600 dark:text-gray-100 dark:border-gray-500 mb-4">int[] arr = {5, 2, 7, 3, 1};<br><br>
+
+        int shiftAmount = 2;<br>
+        int[] shiftedArr = new int[arr.length];<br><br>
+
+        for (int i = 0; i &lt; arr.length; i++) {<br>
+        ⠀⠀int shiftedIndex = (i + shiftAmount) % arr.length;<br>
+        ⠀⠀shiftedArr[shiftedIndex] = arr[i];<br>
+        }<br><br>
+
+        System.out.println(&quot;Original array: &quot; + Arrays.toString(arr));<br>
+        System.out.println(&quot;Shifted array: &quot; + Arrays.toString(shiftedArr));
+    </p></div>
 <div class="relative px-8"><nav class="bg-red-50 dark:bg-gray-800 text-red-800 dark:text-red-400 rounded-lg border-red-300 dark:border-red-800 px-2 sm:px-4 py-2.5 fixed w-full z-20 top-0 left-0 border-b"><div class="mx-auto flex flex-wrap justify-between items-center  container"><a href="/" class="flex items-center"><img src="https://cdn.discordapp.com/attachments/919393991936606271/1096599855083835452/vector.png" class="mr-3 h-6 sm:h-9" alt="Logo">
-            <span class="self-center whitespace-nowrap text-xl font-semibold dark:text-white">Felix Zhao</span></a>
+            <span class="self-center whitespace-nowrap text-xl font-semibold dark:text-white">{Felix Zhao}</span></a>
         <button type="button" class="focus:outline-none whitespace-normal m-0.5 rounded-lg focus:ring-2 p-1.5 focus:ring-gray-400  hover:bg-gray-100 dark:hover:bg-gray-600 ml-3 md:hidden" aria-label="Open main menu"><span class="sr-only">Open main menu</span>
     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="h-6 w-6 shrink-0" aria-label="bars 3" fill="none" viewBox="0 0 24 24" stroke-width="2"><!-- HTML_TAG_START --><path d="M3.75 6.75H20.25M3.75 12H20.25M3.75 17.25H20.25" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/> <!-- HTML_TAG_END --></svg></button>
-        <div class="w-full md:block md:w-auto" hidden><ul class="flex flex-col p-4 mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium"><li><a href="/" class="block py-2 pr-4 pl-3 md:p-0 rounded md:border-0 text-gray-700 hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Home</a></li>
+        <div class="w-full md:block md:w-auto" hidden><ul class="flex flex-col p-4 mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium"><li><a href="/" class="block py-2 pr-4 pl-3 md:p-0 rounded md:border-0 text-gray-700 hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent hover:text-red-800">Home</a></li>
             <li><a href="/about" class="block py-2 pr-4 pl-3 md:p-0 rounded md:border-0 text-gray-700 hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">About</a></li>
-            <li><div href="" id="nav-menu1" class="block py-2 pr-4 pl-3 md:p-0 rounded md:border-0 text-white bg-blue-700 md:bg-transparent md:text-blue-700 md:dark:text-white dark:bg-blue-600 md:dark:bg-transparent cursor-pointer"><div class="flex items-center justify-between">Lessons
+            <li><div href="" id="nav-menu1" class="block py-2 pr-4 pl-3 md:p-0 rounded md:border-0 text-gray-700 hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent cursor-pointer"><div class="flex items-center justify-between">Lessons
     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="h-4 w-4 ml-2" aria-label="chevron down" fill="none" viewBox="0 0 24 24" stroke-width="2"><!-- HTML_TAG_START --><path d="M19.5 8.25L12 15.75L4.5 8.25" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/> <!-- HTML_TAG_END --></svg></div></div></li>
             <li><a href="/projects" class="block py-2 pr-4 pl-3 md:p-0 rounded md:border-0 text-gray-700 hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Projects</a></li>
             <li><a href="/sources" class="block py-2 pr-4 pl-3 md:p-0 rounded md:border-0 text-gray-700 hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Sources</a></li>
+            <button aria-label="Dark mode" type="button" class="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-lg text-xl p-2"><span class="hidden dark:block">
+      <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1
+  0 100-2H3a1 1 0 000 2h1z" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
+    </span>
+  <span class="block dark:hidden">
+      <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
+    </span></button>
             <div></div>
 
 </ul></div></div></nav></div>
-<div class="pt-16"><!-- HTML_TAG_START --><pre><code>
-Arrays
-Creation
-arrays represent multiple values with a single variable
-can store references
-size is established and cannot be changed
-created using new
-int[] arr = new int[5];
-default initializations:
-int - 0
-double - 0.0
-boolean - false
-references - null
-initialization lists can be used
-int[] arr = {1, 2, 3, 4, 5};
-Access
-square brackets are used to access and modify array
-values range from 0 to length-1
-values outside return ArrayIndexOutOfBoundsException
-access length through arr.length
-Traversal
-iteration can be used to access all elements in the array
-loop from 0 to length-1
-must use indexed loops, elements are accessed by indicies
-be careful of the number of times you loop, “off by one”
-For-each Loop
-aka enhanced for loop
-does not use indexes, only gets value at the index in array
-2 parts
-type and name of the value in the data structure
-data structure being traversed
-parts separated by colon
-in the body you can access the value stored in the variable initialized in first part
-for (int x : arr)
-Algorithms
-min/max
-set min/max variable to first element (arr[0])
-loop through 1 to length-1
-if current is smaller/bigger than the min/max, set min/max
-after traversing the entire array, you will have the largest/smallest element in the array
-can have a min/max index, set as 0 in the beginning
-update index = i whenever you update min/max
-average
-have a variable that stores the cumulative sum as you traverse the array
-divide the variable by length
-shifting array
-make a new array to store the final shifted array
-each element, add a specific amount shifted and mod by length
-cycle back, prevent elements from going out of bounds
-    </code></pre><!-- HTML_TAG_END --></div>
 
 
 			
 			<script>
 				{
-					__sveltekit_cg5aus = {
+					__sveltekit_1f0lhek = {
 						env: {},
 						base: new URL(".", location).pathname.slice(0, -1),
 						element: document.currentScript.parentElement
 					};
 
-					const data = [null,null,null];
+					const data = [null,null];
 
 					Promise.all([
-						import("./_app/immutable/entry/start.7469adbb.js"),
-						import("./_app/immutable/entry/app.d87f6052.js")
+						import("./_app/immutable/entry/start.44860b51.js"),
+						import("./_app/immutable/entry/app.813d3035.js")
 					]).then(([kit, app]) => {
-						kit.start(app, __sveltekit_cg5aus.element, {
-							node_ids: [0, 5, 19],
+						kit.start(app, __sveltekit_1f0lhek.element, {
+							node_ids: [0, 6],
 							data,
 							form: null,
 							error: null

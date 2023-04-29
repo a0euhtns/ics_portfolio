@@ -1,174 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
+	<style>
+		::-webkit-scrollbar {
+			width: 20px;
+		}
+		::-webkit-scrollbar-track {
+			background-color: transparent;
+		}
+		::-webkit-scrollbar-thumb {
+			background-color: #d6dee1;
+			border-radius: 20px;
+			border: 6px solid transparent;
+			background-clip: content-box;
+		}
+		::-webkit-scrollbar-thumb:hover {
+			background-color: #a8bbbf;
+		}
+	</style>
 	<head>
 		<meta charset="utf-8" />
 		<link rel="icon" href="./favicon.png" />
 		<meta name="viewport" content="width=device-width" />
 		<meta http-equiv="content-security-policy" content="">
-		<link href="./_app/immutable/assets/app.b767e8fd.css" rel="stylesheet">
-		<link href="./_app/immutable/assets/Chevron.1d121e74.css" rel="stylesheet">
-		<link rel="modulepreload" href="./_app/immutable/entry/start.7469adbb.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/index.4db87ebb.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/singletons.9ad32d57.js">
-		<link rel="modulepreload" href="./_app/immutable/entry/app.d87f6052.js">
-		<link rel="modulepreload" href="./_app/immutable/entry/_layout.svelte.dad98592.js">
+		<link href="./_app/immutable/assets/_layout.b8b9d57a.css" rel="stylesheet">
+		<link href="./_app/immutable/assets/Indicator.1d121e74.css" rel="stylesheet">
+		<link rel="modulepreload" href="./_app/immutable/entry/start.44860b51.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/index.6963947b.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/singletons.c0d12894.js">
+		<link rel="modulepreload" href="./_app/immutable/entry/app.813d3035.js">
+		<link rel="modulepreload" href="./_app/immutable/entry/_layout.svelte.dac6ed13.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/Indicator.svelte_svelte_type_style_lang.7adfd83d.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/NavLi.2be67e77.js">
 		<link rel="modulepreload" href="./_app/immutable/entry/_layout.js.984db11e.js">
 		<link rel="modulepreload" href="./_app/immutable/chunks/_layout.da46b06b.js">
-		<link rel="modulepreload" href="./_app/immutable/entry/classes-layout.svelte.dad98592.js">
-		<link rel="modulepreload" href="./_app/immutable/entry/classes-page.svelte.51bf29fa.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/Chevron.0ec6f9ef.js">
+		<link rel="modulepreload" href="./_app/immutable/entry/classes-page.svelte.bef1cbc5.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/P.b3c387a8.js">
 	</head>
-	<body data-sveltekit-preload-data="hover">
+	<body data-sveltekit-preload-data="hover" class="bg-white dark:bg-gray-800">
 		<div style="display: contents">
 
 
+<div class="pt-20 m-10 mx-36"><h2 class="text-4xl font-bold text-gray-900 dark:text-white w-full mb-4">Writing Classes</h2>
+    <h4 weight="light" class="text-2xl font-bold text-gray-900 dark:text-white w-full mb-4">Anatomy of a Class</h4>
+    <p class="text-base text-gray-500 dark:text-gray-400 leading-normal font-light text-left whitespace-normal mb-4 leading-loose">A class in Java is made up of attributes (also called instance variables), methods, 
+        and constructors. Attributes are declared using the private keyword, which restricts 
+        access to only the declaring class. Constructors are used to set the initial state of 
+        an object&#39;s attributes. Methods can be both public and private, and are used to operate 
+        on an object&#39;s attributes. Data encapsulation and implementation of a class are hidden 
+        from outside the class. Accessor and mutator methods allow the use and modification of data.
+    </p>
+    <h4 weight="light" class="text-2xl font-bold text-gray-900 dark:text-white w-full mb-4">Constructors</h4>
+    <p class="text-base text-gray-500 dark:text-gray-400 leading-normal font-light text-left whitespace-normal mb-4 leading-loose">Constructors are used to set the initial state of an object&#39;s attributes. Constructor 
+        parameters are local variables to the constructor and set instance variables. If no 
+        constructor is written, Java provides a no-argument constructor, and instance variables 
+        are set to default values.
+    </p>
+    <h4 weight="light" class="text-2xl font-bold text-gray-900 dark:text-white w-full mb-4">Documentation</h4>
+    <p class="text-base text-gray-500 dark:text-gray-400 leading-normal font-light text-left whitespace-normal mb-4 leading-loose">Comments in Java can be single-line (// ), multiline (/* */), or Javadoc (/** */). 
+        Javadoc comments are used to create API documentation. Use comments to describe 
+        functionality and document preconditions and postconditions. Precondition 
+        comments describe conditions that must be true before a segment of the program 
+        can be executed. Postcondition comments describe conditions that are true after a 
+        segment of the program has executed. Programmers write method code to satisfy 
+        postconditions when preconditions are met.
+    </p>
+    <h4 weight="light" class="text-2xl font-bold text-gray-900 dark:text-white w-full mb-4">Accessor and Mutator Methods</h4>
+    <p class="text-base text-gray-500 dark:text-gray-400 leading-normal font-light text-left whitespace-normal mb-4 leading-loose">Accessor methods are used to get the value of instance or static variables. Mutator 
+        methods are used to set the value of instance or static variables. Accessor methods 
+        are non-void and return a copy of the value. Mutator methods are often void methods 
+        with parameters.
+    </p>
+    <h4 weight="light" class="text-2xl font-bold text-gray-900 dark:text-white w-full mb-4">Writing Methods</h4>
+    <p class="text-base text-gray-500 dark:text-gray-400 leading-normal font-light text-left whitespace-normal mb-4 leading-loose">Methods can define the behaviors of an object. It is possible to pass objects into 
+        methods. Do not modify mutable objects that are passed in, as this will change the 
+        original object. When the parameter is a primitive, the formal parameter copies the 
+        value. When the parameter is a reference to an object, the formal parameter copies 
+        the reference. Passing in a reference results in the formal parameter and the actual 
+        parameter referring to the same object.<br>
+        An example of a method that passes in a object is:
+    </p>
+    <p class="text-base text-gray-900 dark:text-white leading-normal font-normal text-left whitespace-normal text-m p-2 font-mono font-semibold text-gray-800 bg-gray-100 border border-gray-200 rounded-lg dark:bg-gray-600 dark:text-gray-100 dark:border-gray-500 mb-4">public boolean isSameBreed (Dog otherDog) {<br>
+        ⠀⠀return breed.equals(otherDog.breed);<br>
+        }<br>
+        //breed is private data in the dog class<br>
+        //method is in the dog class, object passed in is also part of dog class<br>
+        //allows both calling object and parameter to access breed
+    </p>
+    <h4 weight="light" class="text-2xl font-bold text-gray-900 dark:text-white w-full mb-4">Static Variables and Methods</h4>
+    <p class="text-base text-gray-500 dark:text-gray-400 leading-normal font-light text-left whitespace-normal mb-4 leading-loose">Static means associated with the class, not the object. Static methods include a 
+        static header before the method name. Static methods cannot access instance variables 
+        but can access and change static variables. They do not have a &quot;this&quot; reference. 
+        All objects of a class share a single static variable, which can be either public 
+        or private and is designated with the static keyword before the variable type.
+    </p>
+    <h4 weight="light" class="text-2xl font-bold text-gray-900 dark:text-white w-full mb-4">Scope and Access</h4>
+    <p class="text-base text-gray-500 dark:text-gray-400 leading-normal font-light text-left whitespace-normal mb-4 leading-loose">Local variables are declared within the body of a method or constructor and can 
+        only be used within that method or constructor. Local variables cannot be declared 
+        public or private. If a local variable has the same name as an instance variable, 
+        the variable name will refer to the local variable instead of the instance variable. 
+        Programmers can solve large problems by splitting them into subproblems and creating 
+        methods to solve each subproblem.
+    </p>
+    <h4 weight="light" class="text-2xl font-bold text-gray-900 dark:text-white w-full mb-4">The &quot;this&quot; Keyword</h4>
+    <p class="text-base text-gray-500 dark:text-gray-400 leading-normal font-light text-left whitespace-normal mb-4 leading-loose">Within a non-static method or constructor, &quot;this&quot; refers to the current object. 
+        &quot;this&quot; can be used to pass the current object as a parameter in a method call.
+    </p></div>
 <div class="relative px-8"><nav class="bg-red-50 dark:bg-gray-800 text-red-800 dark:text-red-400 rounded-lg border-red-300 dark:border-red-800 px-2 sm:px-4 py-2.5 fixed w-full z-20 top-0 left-0 border-b"><div class="mx-auto flex flex-wrap justify-between items-center  container"><a href="/" class="flex items-center"><img src="https://cdn.discordapp.com/attachments/919393991936606271/1096599855083835452/vector.png" class="mr-3 h-6 sm:h-9" alt="Logo">
-            <span class="self-center whitespace-nowrap text-xl font-semibold dark:text-white">Felix Zhao</span></a>
+            <span class="self-center whitespace-nowrap text-xl font-semibold dark:text-white">{Felix Zhao}</span></a>
         <button type="button" class="focus:outline-none whitespace-normal m-0.5 rounded-lg focus:ring-2 p-1.5 focus:ring-gray-400  hover:bg-gray-100 dark:hover:bg-gray-600 ml-3 md:hidden" aria-label="Open main menu"><span class="sr-only">Open main menu</span>
     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="h-6 w-6 shrink-0" aria-label="bars 3" fill="none" viewBox="0 0 24 24" stroke-width="2"><!-- HTML_TAG_START --><path d="M3.75 6.75H20.25M3.75 12H20.25M3.75 17.25H20.25" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/> <!-- HTML_TAG_END --></svg></button>
-        <div class="w-full md:block md:w-auto" hidden><ul class="flex flex-col p-4 mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium"><li><a href="/" class="block py-2 pr-4 pl-3 md:p-0 rounded md:border-0 text-gray-700 hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Home</a></li>
+        <div class="w-full md:block md:w-auto" hidden><ul class="flex flex-col p-4 mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium"><li><a href="/" class="block py-2 pr-4 pl-3 md:p-0 rounded md:border-0 text-gray-700 hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent hover:text-red-800">Home</a></li>
             <li><a href="/about" class="block py-2 pr-4 pl-3 md:p-0 rounded md:border-0 text-gray-700 hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">About</a></li>
-            <li><div href="" id="nav-menu1" class="block py-2 pr-4 pl-3 md:p-0 rounded md:border-0 text-white bg-blue-700 md:bg-transparent md:text-blue-700 md:dark:text-white dark:bg-blue-600 md:dark:bg-transparent cursor-pointer"><div class="flex items-center justify-between">Lessons
+            <li><div href="" id="nav-menu1" class="block py-2 pr-4 pl-3 md:p-0 rounded md:border-0 text-gray-700 hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent cursor-pointer"><div class="flex items-center justify-between">Lessons
     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="h-4 w-4 ml-2" aria-label="chevron down" fill="none" viewBox="0 0 24 24" stroke-width="2"><!-- HTML_TAG_START --><path d="M19.5 8.25L12 15.75L4.5 8.25" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/> <!-- HTML_TAG_END --></svg></div></div></li>
             <li><a href="/projects" class="block py-2 pr-4 pl-3 md:p-0 rounded md:border-0 text-gray-700 hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Projects</a></li>
             <li><a href="/sources" class="block py-2 pr-4 pl-3 md:p-0 rounded md:border-0 text-gray-700 hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Sources</a></li>
+            <button aria-label="Dark mode" type="button" class="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-lg text-xl p-2"><span class="hidden dark:block">
+      <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1
+  0 100-2H3a1 1 0 000 2h1z" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
+    </span>
+  <span class="block dark:hidden">
+      <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
+    </span></button>
             <div></div>
 
 </ul></div></div></nav></div>
-<div class="pt-20"><!-- HTML_TAG_START --><pre><code>
-Writing Classes
-Anatomy of a Class
-public and private affect access
-private restricts access to only declaring class
-classes are designated public
-attributes are private
-constructors are public
-methods can be both
-cannot access private methods outside of class
-data encapsulation, implementation of a class are hidden
-instance variables encapsulated using private
-accessor and mutator methods allows use and modification of data
-Constructors
-object state refers to its attributes
-has-a relationship
-constructors set initial state of object for all instance variables
-constructor parameters are local variables to the constructor, sets instance variables
-no constructor written, java provides no-argument constructor, instance variables set to default values
-null can be set
-Documentation
-comments are ignored
-
-
-single (//), multiline (/* /), javadoc (/** */)
-
-
-javadoc comments help create API documentation
-
-
-use comments to describe functionality
-
-
-precondition - always true prior to execution of a segment of the program
-
-
-comment conditions that are true for method to work
-postcondition - always true after execution of a segment of a program
-
-
-comment conditions that are true after method is run
-precondition - postcondition
-
- /**
-  * Precondition: Parameter num is less than the length of the word
-  * Postcondition: Returns the string from index num to end of the word
-  *                followed by the characters of word from index 0 to num
-  *                not including num. The state of word is not changed
-
-
-programmers write method code to satisfy postconditions when preconditions are met
-
-
-Accessor Methods
-gets value of instance or static variables
-non-void
-copy of the value is returned, return by value
-toString usually overridden to provide a description of a specific object
-includes data from instance variables
-if you print an object that has a toString method, it calls the method and prints the returned string
-Mutator Methods
-sets value of instance or static variables
-often void method with parameters
-Writing Methods
-you can pass objects into methods
-
-
-dog example
-
- public boolean isSameBreed (Dog otherDog) {
-	return breed.equals(otherDog.breed);
-}
-//breed is private data in the dog class
-//method is in the dog class, object passed in is also part of dog class
-//allows both calling object and parameter to access breed
-
-
-methods can define the behaviors of an object
-
-
-don't modify mutable objects that are passed in
-
-
-change original
-when parameter is a primitive, formal parameter copies the value
-
-
-when parameter is a reference to an object, formal parameter copies the reference
-
-
-passing in reference results in formal parameter and actual parameter to refer to the same object
-
-
-Static Variables and Methods
-static means associated with class, not object
-static methods include static header before method name
-cannot access instance variables
-can access and change static variables
-do not have a “this” reference
-all objects of a class share a single static variable
-can be either public or private, designated with static before variable type
-used with class name and dot operator, since they are part of the class, not object
-Scope and Access
-local variables - declared within the body of a method or constructor
-cannot be declared public and private
-local variable with same name as an instance, variable name will refer to local instead of instance
-local variables in a method or constructor can only be used within
-programmers can solve large problems by splitting into subproblems and creating methods to solve each subproblem
-method decomposition
-this Keyword
-within a non-static method or constructor
-“this” refers to current object
-“this” can be used to pass the current object as a parameter in a method call
-
-    </code></pre><!-- HTML_TAG_END --></div>
 
 
 			
 			<script>
 				{
-					__sveltekit_cg5aus = {
+					__sveltekit_1f0lhek = {
 						env: {},
 						base: new URL(".", location).pathname.slice(0, -1),
 						element: document.currentScript.parentElement
 					};
 
-					const data = [null,null,null];
+					const data = [null,null];
 
 					Promise.all([
-						import("./_app/immutable/entry/start.7469adbb.js"),
-						import("./_app/immutable/entry/app.d87f6052.js")
+						import("./_app/immutable/entry/start.44860b51.js"),
+						import("./_app/immutable/entry/app.813d3035.js")
 					]).then(([kit, app]) => {
-						kit.start(app, __sveltekit_cg5aus.element, {
-							node_ids: [0, 7, 21],
+						kit.start(app, __sveltekit_1f0lhek.element, {
+							node_ids: [0, 8],
 							data,
 							form: null,
 							error: null

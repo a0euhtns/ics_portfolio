@@ -1,37 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
+	<style>
+		::-webkit-scrollbar {
+			width: 20px;
+		}
+		::-webkit-scrollbar-track {
+			background-color: transparent;
+		}
+		::-webkit-scrollbar-thumb {
+			background-color: #d6dee1;
+			border-radius: 20px;
+			border: 6px solid transparent;
+			background-clip: content-box;
+		}
+		::-webkit-scrollbar-thumb:hover {
+			background-color: #a8bbbf;
+		}
+	</style>
 	<head>
 		<meta charset="utf-8" />
 		<link rel="icon" href="./favicon.png" />
 		<meta name="viewport" content="width=device-width" />
 		<meta http-equiv="content-security-policy" content="">
-		<link href="./_app/immutable/assets/app.b767e8fd.css" rel="stylesheet">
-		<link href="./_app/immutable/assets/Chevron.1d121e74.css" rel="stylesheet">
-		<link rel="modulepreload" href="./_app/immutable/entry/start.7469adbb.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/index.4db87ebb.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/singletons.9ad32d57.js">
-		<link rel="modulepreload" href="./_app/immutable/entry/app.d87f6052.js">
-		<link rel="modulepreload" href="./_app/immutable/entry/_layout.svelte.dad98592.js">
+		<link href="./_app/immutable/assets/_layout.b8b9d57a.css" rel="stylesheet">
+		<link href="./_app/immutable/assets/Indicator.1d121e74.css" rel="stylesheet">
+		<link rel="modulepreload" href="./_app/immutable/entry/start.44860b51.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/index.6963947b.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/singletons.c0d12894.js">
+		<link rel="modulepreload" href="./_app/immutable/entry/app.813d3035.js">
+		<link rel="modulepreload" href="./_app/immutable/entry/_layout.svelte.dac6ed13.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/Indicator.svelte_svelte_type_style_lang.7adfd83d.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/NavLi.2be67e77.js">
 		<link rel="modulepreload" href="./_app/immutable/entry/_layout.js.984db11e.js">
 		<link rel="modulepreload" href="./_app/immutable/chunks/_layout.da46b06b.js">
-		<link rel="modulepreload" href="./_app/immutable/entry/inheritance-layout.svelte.dad98592.js">
-		<link rel="modulepreload" href="./_app/immutable/entry/inheritance-page.svelte.3240ddc0.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/Chevron.0ec6f9ef.js">
+		<link rel="modulepreload" href="./_app/immutable/entry/inheritance-page.svelte.d94d8d33.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/Kbd.073baf50.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/P.b3c387a8.js">
 	</head>
-	<body data-sveltekit-preload-data="hover">
+	<body data-sveltekit-preload-data="hover" class="bg-white dark:bg-gray-800">
 		<div style="display: contents">
 
 
+<div class="pt-20 m-10 mx-36"><h2 class="text-4xl font-bold text-gray-900 dark:text-white w-full mb-4">Inheritance</h2>
+    <h4 weight="light" class="text-2xl font-bold text-gray-900 dark:text-white w-full mb-4">Inheritance Relations</h4>
+    <p class="text-base text-gray-500 dark:text-gray-400 leading-normal font-light text-left whitespace-normal mb-4 leading-loose">Inheritance in Java involves a parent-child relationship between classes. The common 
+        attributes of related classes can be put into a superclass, which is the parent class. 
+        The classes that extend a superclass are called subclasses, and they inherit the 
+        attributes and behaviors of the parent class. This is called an is-a relationship, 
+        and it can be represented as a directed graph from the parent pointing to the child. 
+        The <kbd class="text-xs font-semibold text-gray-800 bg-gray-100 border border-gray-200 rounded-lg dark:bg-gray-600 dark:text-gray-100 dark:border-gray-500 px-1.5 py-1 font-mono font-semibold">extends</kbd> keyword means that 
+        a class inherits from another class, and a class can only extend one other class.
+    </p>
+
+    <h4 weight="light" class="text-2xl font-bold text-gray-900 dark:text-white w-full mb-4">The Super Keyword</h4>
+    <p class="text-base text-gray-500 dark:text-gray-400 leading-normal font-light text-left whitespace-normal mb-4 leading-loose">When a subclass is created, the constructors are not inherited through inheritance. 
+        The <kbd class="text-xs font-semibold text-gray-800 bg-gray-100 border border-gray-200 rounded-lg dark:bg-gray-600 dark:text-gray-100 dark:border-gray-500 px-1.5 py-1 font-mono font-semibold">super</kbd> keyword is used to 
+        call anything from the parent, but only the first line of the subclass constructor can 
+        call <kbd class="text-xs font-semibold text-gray-800 bg-gray-100 border border-gray-200 rounded-lg dark:bg-gray-600 dark:text-gray-100 dark:border-gray-500 px-1.5 py-1 font-mono font-semibold">super</kbd>. Parameters can be 
+        passed in <kbd class="text-xs font-semibold text-gray-800 bg-gray-100 border border-gray-200 rounded-lg dark:bg-gray-600 dark:text-gray-100 dark:border-gray-500 px-1.5 py-1 font-mono font-semibold">super</kbd>, which calls 
+        whichever constructor with a matching signature. If a subclass constructor does not 
+        call <kbd class="text-xs font-semibold text-gray-800 bg-gray-100 border border-gray-200 rounded-lg dark:bg-gray-600 dark:text-gray-100 dark:border-gray-500 px-1.5 py-1 font-mono font-semibold">super</kbd>, Java inserts a call 
+        to the superclass&#39;s no-argument constructor. Regardless of whether the superclass constructor 
+        is called implicitly or explicitly, the superclass constructors call each other until the 
+        Java Object constructor is called, and then it goes back down the hierarchy.
+        <br><br>
+
+        The <kbd class="text-xs font-semibold text-gray-800 bg-gray-100 border border-gray-200 rounded-lg dark:bg-gray-600 dark:text-gray-100 dark:border-gray-500 px-1.5 py-1 font-mono font-semibold">super</kbd> keyword can also be used to call methods. 
+        The syntax <kbd class="text-xs font-semibold text-gray-800 bg-gray-100 border border-gray-200 rounded-lg dark:bg-gray-600 dark:text-gray-100 dark:border-gray-500 px-1.5 py-1 font-mono font-semibold">super.method()</kbd> is used to 
+        call a valid method name and parameters. <kbd class="text-xs font-semibold text-gray-800 bg-gray-100 border border-gray-200 rounded-lg dark:bg-gray-600 dark:text-gray-100 dark:border-gray-500 px-1.5 py-1 font-mono font-semibold">super</kbd> 
+        can call overridden methods in a subclass, almost like a recursion call stack.
+    </p>
+    <h4 weight="light" class="text-2xl font-bold text-gray-900 dark:text-white w-full mb-4">Method Overriding</h4>
+    <p class="text-base text-gray-500 dark:text-gray-400 leading-normal font-light text-left whitespace-normal mb-4 leading-loose">Method overriding is when a public method in a subclass has the same signature as a public method in the 
+        superclass. Subclasses inherit all public methods, which remain public in the subclass. When 
+        calling an overridden method, Java calls the method of the original object.
+    </p>
+    <h4 weight="light" class="text-2xl font-bold text-gray-900 dark:text-white w-full mb-4">Reference Variables</h4>
+    <p class="text-base text-gray-500 dark:text-gray-400 leading-normal font-light text-left whitespace-normal mb-4 leading-loose">If class S &quot;is-a&quot; class T, assigning an object of type S to a reference of type T allows 
+        polymorphism. Polymorphic means that you can refer to objects from different classes, and 
+        when calling an overridden method, Java calls the method of the original object. If S &quot;is-a&quot; T, 
+        a reference of T can be used for T or S. This can be useful to store every class in one data 
+        structure.
+    </p>
+    <p class="text-base text-gray-900 dark:text-white leading-normal font-normal text-left whitespace-normal text-m p-2 font-mono font-semibold text-gray-800 bg-gray-100 border border-gray-200 rounded-lg dark:bg-gray-600 dark:text-gray-100 dark:border-gray-500 mb-4">public class T {<br>
+        ⠀⠀public act() {<br>
+        ⠀⠀⠀⠀// implementation not shown<br>
+        ⠀⠀}<br>
+        }<br><br>
+
+        public class S extends T {<br>
+        ⠀⠀public act() {<br>
+        ⠀⠀⠀⠀// different implementation<br>
+        ⠀⠀}<br>
+        }<br><br>
+
+        // another class<br>
+        T obj = new S(); // obj has a reference variable of type T
+    </p>
+    <h4 weight="light" class="text-2xl font-bold text-gray-900 dark:text-white w-full mb-4">Polymorphism</h4>
+    <p class="text-base text-gray-500 dark:text-gray-400 leading-normal font-light text-left whitespace-normal mb-4 leading-loose">At compile time, methods in or inherited by the declared type determine the correctness 
+        of a non-static method call. The correct method based on the actual object type is run, 
+        not the reference variable. When an object&#39;s reference type is parent, it can be 
+        downcasted to the original object type using the syntax 
+        <kbd class="text-xs font-semibold text-gray-800 bg-gray-100 border border-gray-200 rounded-lg dark:bg-gray-600 dark:text-gray-100 dark:border-gray-500 px-1.5 py-1 font-mono font-semibold">((Subclass)class).method();</kbd>. 
+        Brackets must be used as the method operator take precedence over casting. Polymorphism 
+        only applies when a method is overridden; a method that doesn&#39;t exist in the parent 
+        would give an error if the reference type is parent.
+        <br><br>
+
+        In the example,
+    </p>
+    <p class="text-base text-gray-900 dark:text-white leading-normal font-normal text-left whitespace-normal text-m p-2 font-mono font-semibold text-gray-800 bg-gray-100 border border-gray-200 rounded-lg dark:bg-gray-600 dark:text-gray-100 dark:border-gray-500 mb-4">// another class
+        T obj = new S(); // obj has a reference variable of type T
+        obj.act(); // class S
+    </p>
+    <p class="text-base text-gray-500 dark:text-gray-400 leading-normal font-light text-left whitespace-normal mb-4 leading-loose">If obj.act() is called, Java would find the act method that fits the object&#39;s actual type, 
+        not the reference variable type. obj.act() would execute the method from class S.
+    </p>
+    <h4 weight="light" class="text-2xl font-bold text-gray-900 dark:text-white w-full mb-4">Downcasting</h4>
+    <p class="text-base text-gray-500 dark:text-gray-400 leading-normal font-light text-left whitespace-normal mb-4 leading-loose">When an object&#39;s reference variable is a parent, it can be cast to anything below the 
+        parent class to the object&#39;s class. This is used to access methods of different classes.
+    </p>
+    <h4 weight="light" class="text-2xl font-bold text-gray-900 dark:text-white w-full mb-4">Abstract Classes</h4>
+    <p class="text-base text-gray-500 dark:text-gray-400 leading-normal font-light text-left whitespace-normal mb-4 leading-loose">Abstract classes are superclasses that are only a concept and cannot be instantiated. 
+        Abstract classes have no implementation of code, and if a class has one or more abstract methods, 
+        it must be declared abstract. Abstract classes can still have constructors. If a 
+        subclass of an abstract class does not have implementation of all abstract methods, 
+        it must also be declared abstract.
+        <br><br>
+
+        An abstract class is declared with:
+    </p>
+    <p class="text-base text-gray-900 dark:text-white leading-normal font-normal text-left whitespace-normal text-m p-2 font-mono font-semibold text-gray-800 bg-gray-100 border border-gray-200 rounded-lg dark:bg-gray-600 dark:text-gray-100 dark:border-gray-500 mb-4">abstract class Class {}
+    </p>
+    <p class="text-base text-gray-500 dark:text-gray-400 leading-normal font-light text-left whitespace-normal mb-4 leading-loose">An abstact method can be declared as:
+    </p>
+    <p class="text-base text-gray-900 dark:text-white leading-normal font-normal text-left whitespace-normal text-m p-2 font-mono font-semibold text-gray-800 bg-gray-100 border border-gray-200 rounded-lg dark:bg-gray-600 dark:text-gray-100 dark:border-gray-500 mb-4">public abstract void method();
+    </p>
+    <h4 weight="light" class="text-2xl font-bold text-gray-900 dark:text-white w-full mb-4">Interfaces</h4>
+    <p class="text-base text-gray-500 dark:text-gray-400 leading-normal font-light text-left whitespace-normal mb-4 leading-loose">Interfaces are like abstract classes, but they do not have fields or constructors, 
+        and all methods are abstract. If a class uses an interface, it can be declared 
+        using the syntax:
+    </p>
+    <p class="text-base text-gray-900 dark:text-white leading-normal font-normal text-left whitespace-normal text-m p-2 font-mono font-semibold text-gray-800 bg-gray-100 border border-gray-200 rounded-lg dark:bg-gray-600 dark:text-gray-100 dark:border-gray-500 mb-4">interface Interface {}
+    </p>
+    <p class="text-base text-gray-500 dark:text-gray-400 leading-normal font-light text-left whitespace-normal mb-4 leading-loose">A class can implement an interface with:
+    </p>
+    <p class="text-base text-gray-900 dark:text-white leading-normal font-normal text-left whitespace-normal text-m p-2 font-mono font-semibold text-gray-800 bg-gray-100 border border-gray-200 rounded-lg dark:bg-gray-600 dark:text-gray-100 dark:border-gray-500 mb-4">class Class implements Interface {}
+    </p>
+    <p class="text-base text-gray-500 dark:text-gray-400 leading-normal font-light text-left whitespace-normal mb-4 leading-loose">A class can implement multiple interfaces but only extend one superclass. Finally, 
+        an interface can still be used as a reference variable for an object, as long as 
+        the object implements the interface. This is useful as it can help apply polymorphism.
+    </p>
+    <h4 weight="light" class="text-2xl font-bold text-gray-900 dark:text-white w-full mb-4">Object Class</h4>
+    <p class="text-base text-gray-500 dark:text-gray-400 leading-normal font-light text-left whitespace-normal mb-4 leading-loose">The object class is the superclass of all objects, all classes automatically extend 
+        the object class, even when not specified. The object class has the 
+        <kbd class="text-xs font-semibold text-gray-800 bg-gray-100 border border-gray-200 rounded-lg dark:bg-gray-600 dark:text-gray-100 dark:border-gray-500 px-1.5 py-1 font-mono font-semibold">equals(Object other)</kbd> method, 
+        which can check if 2 objects are equal and returns a boolean. It also has the 
+        <kbd class="text-xs font-semibold text-gray-800 bg-gray-100 border border-gray-200 rounded-lg dark:bg-gray-600 dark:text-gray-100 dark:border-gray-500 px-1.5 py-1 font-mono font-semibold">toString()</kbd> method, which can be 
+        used to print an object. These methods are often overwritten to provide more functionality. 
+        The <kbd class="text-xs font-semibold text-gray-800 bg-gray-100 border border-gray-200 rounded-lg dark:bg-gray-600 dark:text-gray-100 dark:border-gray-500 px-1.5 py-1 font-mono font-semibold">instanceof</kbd> operator can be used 
+        to check if an object is an instance of a specified class. Finally, all objects can have 
+        the object class reference variable associated with it.
+    </p></div>
 <div class="relative px-8"><nav class="bg-red-50 dark:bg-gray-800 text-red-800 dark:text-red-400 rounded-lg border-red-300 dark:border-red-800 px-2 sm:px-4 py-2.5 fixed w-full z-20 top-0 left-0 border-b"><div class="mx-auto flex flex-wrap justify-between items-center  container"><a href="/" class="flex items-center"><img src="https://cdn.discordapp.com/attachments/919393991936606271/1096599855083835452/vector.png" class="mr-3 h-6 sm:h-9" alt="Logo">
-            <span class="self-center whitespace-nowrap text-xl font-semibold dark:text-white">Felix Zhao</span></a>
+            <span class="self-center whitespace-nowrap text-xl font-semibold dark:text-white">{Felix Zhao}</span></a>
         <button type="button" class="focus:outline-none whitespace-normal m-0.5 rounded-lg focus:ring-2 p-1.5 focus:ring-gray-400  hover:bg-gray-100 dark:hover:bg-gray-600 ml-3 md:hidden" aria-label="Open main menu"><span class="sr-only">Open main menu</span>
     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="h-6 w-6 shrink-0" aria-label="bars 3" fill="none" viewBox="0 0 24 24" stroke-width="2"><!-- HTML_TAG_START --><path d="M3.75 6.75H20.25M3.75 12H20.25M3.75 17.25H20.25" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/> <!-- HTML_TAG_END --></svg></button>
-        <div class="w-full md:block md:w-auto" hidden><ul class="flex flex-col p-4 mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium"><li><a href="/" class="block py-2 pr-4 pl-3 md:p-0 rounded md:border-0 text-gray-700 hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Home</a></li>
+        <div class="w-full md:block md:w-auto" hidden><ul class="flex flex-col p-4 mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium"><li><a href="/" class="block py-2 pr-4 pl-3 md:p-0 rounded md:border-0 text-gray-700 hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent hover:text-red-800">Home</a></li>
             <li><a href="/about" class="block py-2 pr-4 pl-3 md:p-0 rounded md:border-0 text-gray-700 hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">About</a></li>
-            <li><div href="" id="nav-menu1" class="block py-2 pr-4 pl-3 md:p-0 rounded md:border-0 text-white bg-blue-700 md:bg-transparent md:text-blue-700 md:dark:text-white dark:bg-blue-600 md:dark:bg-transparent cursor-pointer"><div class="flex items-center justify-between">Lessons
+            <li><div href="" id="nav-menu1" class="block py-2 pr-4 pl-3 md:p-0 rounded md:border-0 text-gray-700 hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent cursor-pointer"><div class="flex items-center justify-between">Lessons
     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="h-4 w-4 ml-2" aria-label="chevron down" fill="none" viewBox="0 0 24 24" stroke-width="2"><!-- HTML_TAG_START --><path d="M19.5 8.25L12 15.75L4.5 8.25" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/> <!-- HTML_TAG_END --></svg></div></div></li>
             <li><a href="/projects" class="block py-2 pr-4 pl-3 md:p-0 rounded md:border-0 text-gray-700 hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Projects</a></li>
             <li><a href="/sources" class="block py-2 pr-4 pl-3 md:p-0 rounded md:border-0 text-gray-700 hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Sources</a></li>
+            <button aria-label="Dark mode" type="button" class="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-lg text-xl p-2"><span class="hidden dark:block">
+      <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1
+  0 100-2H3a1 1 0 000 2h1z" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
+    </span>
+  <span class="block dark:hidden">
+      <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
+    </span></button>
             <div></div>
 
 </ul></div></div></nav></div>
@@ -40,20 +188,20 @@
 			
 			<script>
 				{
-					__sveltekit_cg5aus = {
+					__sveltekit_1f0lhek = {
 						env: {},
 						base: new URL(".", location).pathname.slice(0, -1),
 						element: document.currentScript.parentElement
 					};
 
-					const data = [null,null,null];
+					const data = [null,null];
 
 					Promise.all([
-						import("./_app/immutable/entry/start.7469adbb.js"),
-						import("./_app/immutable/entry/app.d87f6052.js")
+						import("./_app/immutable/entry/start.44860b51.js"),
+						import("./_app/immutable/entry/app.813d3035.js")
 					]).then(([kit, app]) => {
-						kit.start(app, __sveltekit_cg5aus.element, {
-							node_ids: [0, 8, 22],
+						kit.start(app, __sveltekit_1f0lhek.element, {
+							node_ids: [0, 9],
 							data,
 							form: null,
 							error: null

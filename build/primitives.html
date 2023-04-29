@@ -1,79 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
+	<style>
+		::-webkit-scrollbar {
+			width: 20px;
+		}
+		::-webkit-scrollbar-track {
+			background-color: transparent;
+		}
+		::-webkit-scrollbar-thumb {
+			background-color: #d6dee1;
+			border-radius: 20px;
+			border: 6px solid transparent;
+			background-clip: content-box;
+		}
+		::-webkit-scrollbar-thumb:hover {
+			background-color: #a8bbbf;
+		}
+	</style>
 	<head>
 		<meta charset="utf-8" />
 		<link rel="icon" href="./favicon.png" />
 		<meta name="viewport" content="width=device-width" />
 		<meta http-equiv="content-security-policy" content="">
-		<link href="./_app/immutable/assets/app.b767e8fd.css" rel="stylesheet">
-		<link href="./_app/immutable/assets/Chevron.1d121e74.css" rel="stylesheet">
-		<link rel="modulepreload" href="./_app/immutable/entry/start.7469adbb.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/index.4db87ebb.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/singletons.9ad32d57.js">
-		<link rel="modulepreload" href="./_app/immutable/entry/app.d87f6052.js">
-		<link rel="modulepreload" href="./_app/immutable/entry/_layout.svelte.dad98592.js">
+		<link href="./_app/immutable/assets/_layout.b8b9d57a.css" rel="stylesheet">
+		<link href="./_app/immutable/assets/Indicator.1d121e74.css" rel="stylesheet">
+		<link rel="modulepreload" href="./_app/immutable/entry/start.44860b51.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/index.6963947b.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/singletons.c0d12894.js">
+		<link rel="modulepreload" href="./_app/immutable/entry/app.813d3035.js">
+		<link rel="modulepreload" href="./_app/immutable/entry/_layout.svelte.dac6ed13.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/Indicator.svelte_svelte_type_style_lang.7adfd83d.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/NavLi.2be67e77.js">
 		<link rel="modulepreload" href="./_app/immutable/entry/_layout.js.984db11e.js">
 		<link rel="modulepreload" href="./_app/immutable/chunks/_layout.da46b06b.js">
-		<link rel="modulepreload" href="./_app/immutable/entry/primitives-layout.svelte.dad98592.js">
-		<link rel="modulepreload" href="./_app/immutable/entry/primitives-page.svelte.93e125df.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/Chevron.0ec6f9ef.js">
+		<link rel="modulepreload" href="./_app/immutable/entry/primitives-page.svelte.248617cb.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/P.b3c387a8.js">
 	</head>
-	<body data-sveltekit-preload-data="hover">
+	<body data-sveltekit-preload-data="hover" class="bg-white dark:bg-gray-800">
 		<div style="display: contents">
 
 
+<div class="pt-20 m-10 mx-36"><h2 class="text-4xl font-bold text-gray-900 dark:text-white w-full mb-4">Primitive Variables</h2>
+    <h4 weight="light" class="text-2xl font-bold text-gray-900 dark:text-white w-full mb-4">Primitive Data Types</h4>
+    <p class="text-base text-gray-500 dark:text-gray-400 leading-normal font-light text-left whitespace-normal mb-4 leading-loose">Java has eight primitive data types, which are divided into four
+        categories: integer, floating-point, character, and boolean.
+    </p>
+    <h4 weight="light" class="text-2xl font-bold text-gray-900 dark:text-white w-full mb-4">Integer Types</h4>
+    <div class="relative overflow-x-auto"><table class="w-full text-left text-sm text-gray-500 dark:text-gray-400 mb-4"><thead class="text-xs uppercase text-gray-700 dark:text-gray-400 bg-gray-50 dark:bg-gray-700"><tr><th class="px-6 py-3">Type</th>
+            <th class="px-6 py-3">Size (bits)</th>
+            <th class="px-6 py-3">Range</th></tr></thead>
+        <tbody><tr class="border-b last:border-b-0 bg-white dark:bg-gray-800 dark:border-gray-700"><td class="px-6 py-4 whitespace-nowrap font-medium  text-gray-900 dark:text-white">byte</td>
+                <td class="px-6 py-4 whitespace-nowrap font-medium  text-gray-900 dark:text-white">8</td>
+                <td class="px-6 py-4 whitespace-nowrap font-medium  text-gray-900 dark:text-white">-128 to 127</td></tr>
+            <tr class="border-b last:border-b-0 bg-white dark:bg-gray-800 dark:border-gray-700"><td class="px-6 py-4 whitespace-nowrap font-medium  text-gray-900 dark:text-white">short</td>
+                <td class="px-6 py-4 whitespace-nowrap font-medium  text-gray-900 dark:text-white">16</td>
+                <td class="px-6 py-4 whitespace-nowrap font-medium  text-gray-900 dark:text-white">-32,768 to 32,767</td></tr>
+            <tr class="border-b last:border-b-0 bg-white dark:bg-gray-800 dark:border-gray-700"><td class="px-6 py-4 whitespace-nowrap font-medium  text-gray-900 dark:text-white">int</td>
+                <td class="px-6 py-4 whitespace-nowrap font-medium  text-gray-900 dark:text-white">32</td>
+                <td class="px-6 py-4 whitespace-nowrap font-medium  text-gray-900 dark:text-white">-2,147,483,648 to 2,147,483,647</td></tr>
+            <tr class="border-b last:border-b-0 bg-white dark:bg-gray-800 dark:border-gray-700"><td class="px-6 py-4 whitespace-nowrap font-medium  text-gray-900 dark:text-white">long</td>
+                <td class="px-6 py-4 whitespace-nowrap font-medium  text-gray-900 dark:text-white">64</td>
+                <td class="px-6 py-4 whitespace-nowrap font-medium  text-gray-900 dark:text-white">-9,223,372,036,854,775,808 to 9,223,372,036,854,775,807</td></tr></tbody></table></div>
+    <h4 weight="light" class="text-2xl font-bold text-gray-900 dark:text-white w-full mb-4">Floating-Point Types</h4>
+    <div class="relative overflow-x-auto"><table class="w-full text-left text-sm text-gray-500 dark:text-gray-400 mb-4"><thead class="text-xs uppercase text-gray-700 dark:text-gray-400 bg-gray-50 dark:bg-gray-700"><tr><th class="px-6 py-3">Type</th>
+            <th class="px-6 py-3">Size (bits)</th>
+            <th class="px-6 py-3">Range</th>
+            <th class="px-6 py-3">Precision (decimals)</th></tr></thead>
+        <tbody><tr class="border-b last:border-b-0 bg-white dark:bg-gray-800 dark:border-gray-700"><td class="px-6 py-4 whitespace-nowrap font-medium  text-gray-900 dark:text-white">float</td>
+                <td class="px-6 py-4 whitespace-nowrap font-medium  text-gray-900 dark:text-white">32</td>
+                <td class="px-6 py-4 whitespace-nowrap font-medium  text-gray-900 dark:text-white">1.4E-45 to 3.4028235E38</td>
+                <td class="px-6 py-4 whitespace-nowrap font-medium  text-gray-900 dark:text-white">6-7</td></tr>
+            <tr class="border-b last:border-b-0 bg-white dark:bg-gray-800 dark:border-gray-700"><td class="px-6 py-4 whitespace-nowrap font-medium  text-gray-900 dark:text-white">double</td>
+                <td class="px-6 py-4 whitespace-nowrap font-medium  text-gray-900 dark:text-white">64</td>
+                <td class="px-6 py-4 whitespace-nowrap font-medium  text-gray-900 dark:text-white">4.9E-324 to 1.7976931348623157E308</td>
+                <td class="px-6 py-4 whitespace-nowrap font-medium  text-gray-900 dark:text-white">15-16</td></tr></tbody></table></div>
+    <h4 weight="light" class="text-2xl font-bold text-gray-900 dark:text-white w-full mb-4">Character Type</h4>
+    <div class="relative overflow-x-auto"><table class="w-full text-left text-sm text-gray-500 dark:text-gray-400 mb-4"><thead class="text-xs uppercase text-gray-700 dark:text-gray-400 bg-gray-50 dark:bg-gray-700"><tr><th class="px-6 py-3">Type</th>
+            <th class="px-6 py-3">Size (bits)</th>
+            <th class="px-6 py-3">Range</th></tr></thead>
+        <tbody><tr class="border-b last:border-b-0 bg-white dark:bg-gray-800 dark:border-gray-700"><td class="px-6 py-4 whitespace-nowrap font-medium  text-gray-900 dark:text-white">char</td>
+                <td class="px-6 py-4 whitespace-nowrap font-medium  text-gray-900 dark:text-white">16</td>
+                <td class="px-6 py-4 whitespace-nowrap font-medium  text-gray-900 dark:text-white">&#39;\u0000&#39; (0) to &#39;\uffff&#39; (65,535)</td></tr></tbody></table></div>
+    <h4 weight="light" class="text-2xl font-bold text-gray-900 dark:text-white w-full mb-4">Boolean Type</h4>
+    <div class="relative overflow-x-auto"><table class="w-full text-left text-sm text-gray-500 dark:text-gray-400 mb-4"><thead class="text-xs uppercase text-gray-700 dark:text-gray-400 bg-gray-50 dark:bg-gray-700"><tr><th class="px-6 py-3">Type</th>
+            <th class="px-6 py-3">Size (bits)</th>
+            <th class="px-6 py-3">Range</th></tr></thead>
+        <tbody><tr class="border-b last:border-b-0 bg-white dark:bg-gray-800 dark:border-gray-700"><td class="px-6 py-4 whitespace-nowrap font-medium  text-gray-900 dark:text-white">boolean</td>
+                <td class="px-6 py-4 whitespace-nowrap font-medium  text-gray-900 dark:text-white">1</td>
+                <td class="px-6 py-4 whitespace-nowrap font-medium  text-gray-900 dark:text-white">true or false</td></tr></tbody></table></div>
+    <h4 weight="light" class="text-2xl font-bold text-gray-900 dark:text-white w-full mb-4">Declaring Variables</h4>
+    <p class="text-base text-gray-500 dark:text-gray-400 leading-normal font-light text-left whitespace-normal mb-4 leading-loose">To declare a primitive variable, you need to specify its data type and a name.<br>For example:
+    </p>
+    <p class="text-base text-gray-900 dark:text-white leading-normal font-normal text-left whitespace-normal text-m p-2 font-mono font-semibold text-gray-800 bg-gray-100 border border-gray-200 rounded-lg dark:bg-gray-600 dark:text-gray-100 dark:border-gray-500 mb-4">int age;<br>
+        double weight;<br>
+        char initial;<br>
+        boolean isStudent;
+    </p>
+    <h4 weight="light" class="text-2xl font-bold text-gray-900 dark:text-white w-full mb-4">Initializing Variables</h4>
+    <p class="text-base text-gray-500 dark:text-gray-400 leading-normal font-light text-left whitespace-normal mb-4 leading-loose">When a variable is declared, it does not have a value. You need to assign a value to it before you can use it. You can initialize a variable when you declare it, or later in the code.<br>For example:
+    </p>
+    <p class="text-base text-gray-900 dark:text-white leading-normal font-normal text-left whitespace-normal text-m p-2 font-mono font-semibold text-gray-800 bg-gray-100 border border-gray-200 rounded-lg dark:bg-gray-600 dark:text-gray-100 dark:border-gray-500 mb-4">int age = 18;<br>
+        double weight = 68.5;<br>
+        char initial = &#39;J&#39;;<br>
+        boolean isStudent = true;
+    </p>
+    <h4 weight="light" class="text-2xl font-bold text-gray-900 dark:text-white w-full mb-4">Type Conversion</h4>
+    <p class="text-base text-gray-500 dark:text-gray-400 leading-normal font-light text-left whitespace-normal mb-4 leading-loose">Java has strict rules for type conversion. When you assign a value of one type to a variable of another type, the value may be automatically converted to the target type.<br>For example:
+    </p>
+    <p class="text-base text-gray-900 dark:text-white leading-normal font-normal text-left whitespace-normal text-m p-2 font-mono font-semibold text-gray-800 bg-gray-100 border border-gray-200 rounded-lg dark:bg-gray-600 dark:text-gray-100 dark:border-gray-500 mb-4">int a = 5;<br>
+        double b = a; // automatic conversion from int to double
+    </p>
+    <p class="text-base text-gray-500 dark:text-gray-400 leading-normal font-light text-left whitespace-normal mb-4 leading-loose">However, some conversions may result in a loss of precision or truncation of data. You can use explicit type casting to convert a value to a different type.<br>For example:
+    </p>
+    <p class="text-base text-gray-900 dark:text-white leading-normal font-normal text-left whitespace-normal text-m p-2 font-mono font-semibold text-gray-800 bg-gray-100 border border-gray-200 rounded-lg dark:bg-gray-600 dark:text-gray-100 dark:border-gray-500 mb-4">double x = 3.14;
+        int y = (int) x; // explicit casting from double to int
+    </p></div>
 <div class="relative px-8"><nav class="bg-red-50 dark:bg-gray-800 text-red-800 dark:text-red-400 rounded-lg border-red-300 dark:border-red-800 px-2 sm:px-4 py-2.5 fixed w-full z-20 top-0 left-0 border-b"><div class="mx-auto flex flex-wrap justify-between items-center  container"><a href="/" class="flex items-center"><img src="https://cdn.discordapp.com/attachments/919393991936606271/1096599855083835452/vector.png" class="mr-3 h-6 sm:h-9" alt="Logo">
-            <span class="self-center whitespace-nowrap text-xl font-semibold dark:text-white">Felix Zhao</span></a>
+            <span class="self-center whitespace-nowrap text-xl font-semibold dark:text-white">{Felix Zhao}</span></a>
         <button type="button" class="focus:outline-none whitespace-normal m-0.5 rounded-lg focus:ring-2 p-1.5 focus:ring-gray-400  hover:bg-gray-100 dark:hover:bg-gray-600 ml-3 md:hidden" aria-label="Open main menu"><span class="sr-only">Open main menu</span>
     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="h-6 w-6 shrink-0" aria-label="bars 3" fill="none" viewBox="0 0 24 24" stroke-width="2"><!-- HTML_TAG_START --><path d="M3.75 6.75H20.25M3.75 12H20.25M3.75 17.25H20.25" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/> <!-- HTML_TAG_END --></svg></button>
-        <div class="w-full md:block md:w-auto" hidden><ul class="flex flex-col p-4 mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium"><li><a href="/" class="block py-2 pr-4 pl-3 md:p-0 rounded md:border-0 text-gray-700 hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Home</a></li>
+        <div class="w-full md:block md:w-auto" hidden><ul class="flex flex-col p-4 mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium"><li><a href="/" class="block py-2 pr-4 pl-3 md:p-0 rounded md:border-0 text-gray-700 hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent hover:text-red-800">Home</a></li>
             <li><a href="/about" class="block py-2 pr-4 pl-3 md:p-0 rounded md:border-0 text-gray-700 hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">About</a></li>
-            <li><div href="" id="nav-menu1" class="block py-2 pr-4 pl-3 md:p-0 rounded md:border-0 text-white bg-blue-700 md:bg-transparent md:text-blue-700 md:dark:text-white dark:bg-blue-600 md:dark:bg-transparent cursor-pointer"><div class="flex items-center justify-between">Lessons
+            <li><div href="" id="nav-menu1" class="block py-2 pr-4 pl-3 md:p-0 rounded md:border-0 text-gray-700 hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent cursor-pointer"><div class="flex items-center justify-between">Lessons
     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="h-4 w-4 ml-2" aria-label="chevron down" fill="none" viewBox="0 0 24 24" stroke-width="2"><!-- HTML_TAG_START --><path d="M19.5 8.25L12 15.75L4.5 8.25" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/> <!-- HTML_TAG_END --></svg></div></div></li>
             <li><a href="/projects" class="block py-2 pr-4 pl-3 md:p-0 rounded md:border-0 text-gray-700 hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Projects</a></li>
             <li><a href="/sources" class="block py-2 pr-4 pl-3 md:p-0 rounded md:border-0 text-gray-700 hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Sources</a></li>
+            <button aria-label="Dark mode" type="button" class="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-lg text-xl p-2"><span class="hidden dark:block">
+      <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1
+  0 100-2H3a1 1 0 000 2h1z" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
+    </span>
+  <span class="block dark:hidden">
+      <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
+    </span></button>
             <div></div>
 
 </ul></div></div></nav></div>
-<div class="pt-20"><p class="text-base text-gray-500 dark:text-gray-400 leading-normal font-light text-left whitespace-normal">Primitive Variables Printing check spelling of the print statement check
-        number of double quotes, syntax error Variables and Data Types Primitive
-        boolean - true/false int - 32 bit integers double - decimal numbers
-        Non-primitive Strings - text defined with double quotes most
-        non-primitive variables are made by the user Variable Names letters,
-        digits or underscores may not start with a digit spaces are not allowed
-        no java reserved words camelCase Constants use the word “final” before
-        the data type and identifier constants should be UPPER_CASE with
-        underscores Arithmetic Expressions ORDER OF OPERATIONS String literals
-        are surrounded by double quotes, can only concatenate to them addition
-        subtraction multiplication / division integer division removes decimal
-        divide by 0 - ArithmeticException % modulus remainder mod has same order
-        as * and / Assignment Operator = assigns the value on the right side to
-        the variable on the left assignment is last in order of operations
-        compound assignment operators += -= *= /= %= Increment and Decrement ++
-        increment += 1 -- decrement = 1 Casting change the type of one variable
-        to another from larger data type to smaller, loss of data (double) 1/6;
-        makes 1 into double always casts right after Integer max
-        Integer.MAX_VALUE; Integer.MIN_VALUE; integer overflow
-    </p></div>
 
 
 			
 			<script>
 				{
-					__sveltekit_cg5aus = {
+					__sveltekit_1f0lhek = {
 						env: {},
 						base: new URL(".", location).pathname.slice(0, -1),
 						element: document.currentScript.parentElement
 					};
 
-					const data = [null,null,null];
+					const data = [null,null];
 
 					Promise.all([
-						import("./_app/immutable/entry/start.7469adbb.js"),
-						import("./_app/immutable/entry/app.d87f6052.js")
+						import("./_app/immutable/entry/start.44860b51.js"),
+						import("./_app/immutable/entry/app.813d3035.js")
 					]).then(([kit, app]) => {
-						kit.start(app, __sveltekit_cg5aus.element, {
-							node_ids: [0, 11, 25],
+						kit.start(app, __sveltekit_1f0lhek.element, {
+							node_ids: [0, 12],
 							data,
 							form: null,
 							error: null
