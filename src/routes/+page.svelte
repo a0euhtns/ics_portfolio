@@ -1,18 +1,3 @@
-<script>
-    import { Canvas, Layer, t } from "svelte-canvas";
-
-    let innerWidth = window.innerWidth;
-    let innerHeight = window.innerWidth;
-
-    $: render = ({ context, width, height }) => {
-        context.fillStyle = `hsl(${$t / 40}, 100%, 50%)`;
-        context.beginPath();
-        context.arc(($t / 4) % width, ($t / 4) % height, 100, 0, Math.PI * 2);
-        context.fill();
-    };
-</script>
-
-<svelte:window bind:innerWidth bind:innerHeight />
 <div class="py-16 pt-20 m-10 mx-36 z-10">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="sm:text-center lg:text-left">
@@ -51,9 +36,4 @@
             </div>
         </div>
     </div>
-</div>
-<div class="fixed top-0 left-0">
-    <Canvas width={innerWidth} height={innerHeight}>
-        <Layer {render} />
-    </Canvas>
 </div>
