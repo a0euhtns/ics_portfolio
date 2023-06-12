@@ -53,6 +53,16 @@
                 <a href="https://github.com/eogito/Inbot" class="text-blue-500 text-lg">Learn More</a>
             </P>
         </div>
+        <div class="bg-lime-100 p-4 rounded text-center">
+            <Heading tag="h2" class="mb-4">Timber Trek</Heading>
+            <img src="https://media.discordapp.net/attachments/919393991936606271/1117805921125544047/timbertrek.png" class="object-cover max-w-full max-h-full rounded-lg" alt="">
+            <P class="my-4">Timber Trek is a game made for the ICS4U0 course. It is a game about surviving in the forest,
+                which includes a lot of information about many different aspects about surviving in the forest. The purpose 
+                of the game is to help young teenagers who might spend their summers at camp learn how to survive in the forest
+                just in case they get lost. The game include many different aspects including lessons, mazes and action levels.<br><br>
+                <a href="https://github.com/vsarca-school/2023-ICS4-Final-Project" class="text-blue-500 text-lg">Learn More</a>
+            </P>
+        </div>
     </div>
 </div>
 
