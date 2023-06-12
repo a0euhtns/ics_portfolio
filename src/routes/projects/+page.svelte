@@ -20,7 +20,7 @@
 </script>
 <div class="pt-20 m-10 mx-20">
     <Heading tag="h1" class="mb-10">Projects</Heading>
-    <div class="grid grid-cols-3 gap-4">
+    <div class="grid grid-cols-4 gap-4">
         <div class="bg-gray-100 p-4 rounded text-center">
             <Heading tag="h2" class="mb-4">Amori</Heading>
             <img src="https://cdn.discordapp.com/attachments/919393991936606271/1101714047973478461/Untitled.png" class="object-cover max-w-full max-h-full rounded-lg" alt="">
