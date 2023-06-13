@@ -21,7 +21,7 @@
 <div class="pt-20 m-10 mx-20 min-h-screen">
     <Heading tag="h1" class="mb-10">Projects</Heading>
     <div class="grid grid-cols-4 gap-4">
-        <div class="bg-gray-100 p-4 rounded text-center">
+        <div class="bg-gray-100 dark:bg-gray-900 p-4 rounded text-center">
             <Heading tag="h2" class="mb-4">Amori</Heading>
             <img src="https://cdn.discordapp.com/attachments/919393991936606271/1101714047973478461/Untitled.png" class="object-cover max-w-full max-h-full rounded-lg" alt="">
             <P class="my-4">Amori is a short, story-centered game heavily inspired by the game Omori 
@@ -32,7 +32,7 @@
             </P>
             
         </div>
-        <div class="bg-yellow-100 p-4 rounded text-center">
+        <div class="bg-yellow-100 dark:bg-yellow-900 p-4 rounded text-center">
             <Heading tag="h2" class="mb-4">LearnAi.js</Heading>
             <img src="https://cdn.discordapp.com/attachments/919393991936606271/1101712753883881492/image_9.png" class="object-cover max-w-full max-h-full rounded-lg" alt="">
             <P class="my-4">LearnAI.js is a javascript library I helped make for my grade 11 computer science
@@ -43,7 +43,7 @@
             </P>
             
         </div>
-        <div class="bg-indigo-100 p-4 rounded text-center">
+        <div class="bg-indigo-100 dark:bg-indigo-900 p-4 rounded text-center">
             <Heading tag="h2" class="mb-4">Inbot</Heading>
             <img src="https://cdn.discordapp.com/attachments/919393991936606271/1101712525613088849/image_8.png" class="object-cover max-w-full max-h-full rounded-lg" alt="">
             <P class="my-4">Inbot is a discord bot that I helped make for a Lyonhacks III, a hackathon event. 
@@ -53,7 +53,7 @@
                 <a href="https://github.com/eogito/Inbot" class="text-blue-500 text-lg">Learn More</a>
             </P>
         </div>
-        <div class="bg-lime-100 p-4 rounded text-center">
+        <div class="bg-lime-100 dark:bg-lime-900 p-4 rounded text-center">
             <Heading tag="h2" class="mb-4">Timber Trek</Heading>
             <img src="https://media.discordapp.net/attachments/919393991936606271/1117805921125544047/timbertrek.png" class="object-cover max-w-full max-h-full rounded-lg" alt="">
             <P class="my-4">Timber Trek is a game made for the ICS4U0 course. It is a game about surviving in the forest,
