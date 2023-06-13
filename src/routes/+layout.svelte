@@ -1,7 +1,8 @@
 <script>
     import "../app.postcss";
     import * as Flowbite from "flowbite-svelte";
-    let btnClass = 'text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-lg text-xl p-2';
+    let btnClass =
+        "text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-lg text-xl p-2";
 </script>
 
 <slot />
@@ -26,13 +27,16 @@
         </Flowbite.NavBrand>
         <Flowbite.NavHamburger on:click={toggle} />
         <Flowbite.NavUl {hidden}>
-            <Flowbite.NavLi href="/" class="hover:text-red-800">Home</Flowbite.NavLi>
+            <Flowbite.NavLi href="/" class="hover:text-red-800"
+                >Home</Flowbite.NavLi
+            >
             <Flowbite.NavLi href="/about">About</Flowbite.NavLi>
             <Flowbite.NavLi id="nav-menu1" class="cursor-pointer"
                 ><Flowbite.Chevron aligned>Lessons</Flowbite.Chevron
                 ></Flowbite.NavLi
             >
             <Flowbite.NavLi href="/projects">Projects</Flowbite.NavLi>
+            <Flowbite.NavLi href="/isp">ISP</Flowbite.NavLi>
             <Flowbite.NavLi href="/sources">Sources</Flowbite.NavLi>
             <Flowbite.DarkMode {btnClass} />
             <Flowbite.Dropdown triggeredBy="#nav-menu1" class="w-44 z-20">
@@ -73,3 +77,24 @@
         </Flowbite.NavUl>
     </Flowbite.Navbar>
 </div>
+
+<Flowbite.Footer footerType="logo" class="margin-top: auto">
+    <div class="sm:flex sm:items-center sm:justify-between">
+        <Flowbite.FooterBrand
+            href="/"
+            src="https://cdn.discordapp.com/attachments/919393991936606271/1096599855083835452/vector.png"
+            alt="Logo"
+            name="Felix Zhao"
+        />
+        <Flowbite.FooterLinkGroup
+            ulClass="flex flex-wrap items-center mb-6 text-sm text-gray-500 sm:mb-0 dark:text-gray-400"
+        >
+            <Flowbite.FooterLink href="/about">About</Flowbite.FooterLink>
+            <Flowbite.FooterLink href="/projects">Projects</Flowbite.FooterLink>
+            <Flowbite.FooterLink href="/isp">ISP</Flowbite.FooterLink>
+            <Flowbite.FooterLink href="/sources">Sources</Flowbite.FooterLink>
+        </Flowbite.FooterLinkGroup>
+    </div>
+    <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+    <Flowbite.FooterCopyright href="/" by="Felix Zhao™" />
+</Flowbite.Footer>

@@ -1,4 +1,4 @@
-<div class="py-16 pt-20 m-10 mx-36 z-10">
+<div class="py-16 pt-20 m-10 mx-36 z-10 min-h-screen">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="sm:text-center lg:text-left">
             <h1

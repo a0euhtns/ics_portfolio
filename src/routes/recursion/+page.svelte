@@ -17,7 +17,7 @@
     } from "flowbite-svelte";
 </script>
 
-<div class="pt-20 m-10 mx-36">
+<div class="pt-20 m-10 mx-36 min-h-screen">
     <Heading tag="h2" class="mb-4">Recursion</Heading>
     <Heading tag="h4" weight="light" class="mb-4">Recursive Methods</Heading>
     <P weight="light" color="text-gray-500 dark:text-gray-400" class="mb-4 leading-loose">
